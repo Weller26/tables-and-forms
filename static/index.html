@@ -8,9 +8,64 @@
 <body>
 <main>
     <h1>Найди себе друга!</h1>
+    <form>
 
-    <!--Форму размещай тут-->
 
+        Выберите тип питомца<br>
+        <label>
+            <input type="radio" name="petType" value="cat"> Кот
+        </label>
+        <label>
+            <input type="radio" name="petType" value="dog"> Собака
+        </label>
+        <label>
+            <input type="radio" name="petType" value="tiger"> Тигр
+        </label>
+
+        <br>
+        <label>
+            Пол питомца
+            <input type="checkbox" name="gender" formmethod="post" formaction="/pets/orders">
+        </label>
+
+        <label>
+            Питомец
+            <input type="text" name="eyeColor" formmethod="post" formaction="/pets/orders">
+        </label>
+
+        <label>
+            Питомец
+            <input type="text" name="tailLength" formmethod="post" formaction="/pets/orders">
+        </label>
+
+        <label>
+            Питомец
+            <input type="text" name="name" formmethod="post" formaction="/pets/orders">
+        </label>
+
+        <label>
+            Питомец
+            <input type="text" name="dateOfBirth" formmethod="post" formaction="/pets/orders">
+        </label>
+
+        <label>
+            Питомец
+            <input type="text" name="email" formmethod="post" formaction="/pets/orders">
+        </label>
+
+        <label>
+            Питомец
+            <input type="text" name="phone" formmethod="post" formaction="/pets/orders">
+        </label>
+
+        <label>
+            Питомец
+            <input type="text" name="rules" formmethod="post" formaction="/pets/orders">
+        </label>
+        <button type="submit" name="submit" value="Отправить" formmethod="post" formaction="/pets/orders">
+            Отправить
+        </button>
+    </form>
 </main>
 </body>
 </html>
