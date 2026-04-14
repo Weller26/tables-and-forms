@@ -9,61 +9,78 @@
 <main>
     <h1>Найди себе друга!</h1>
     <form>
-
-
-        Выберите тип питомца<br>
         <label>
-            <input type="radio" name="petType" value="cat"> Кот
-        </label>
-        <label>
-            <input type="radio" name="petType" value="dog"> Собака
-        </label>
-        <label>
-            <input type="radio" name="petType" value="tiger"> Тигр
+            Выберите Ваше животное
+            <select name="petType" id="petType">
+                <option value="cat" selected>Кошка</option>
+                <option value="dog">Собака</option>
+                <option value="tiger">Тигр</option>
+            </select>
         </label>
 
         <br>
+        Укажите пол питомца
+        <br>
         <label>
-            Пол питомца
-            <input type="checkbox" name="gender" formmethod="post" formaction="/pets/orders">
+            <input type="radio" name="gender" value="boy"> Boy
         </label>
+        <label>
+            <input type="radio" name="gender" value="girl"> Girl
+        </label>
+        <label>
+            <input type="radio" name="gender" value="none"> None
+        </label>
+        <br>
 
         <label>
-            Питомец
-            <input type="text" name="eyeColor" formmethod="post" formaction="/pets/orders">
+            Укажите цвет глаз Вашего питомца
+            <input type="color" name="eyeColor">
         </label>
+        <br>
 
         <label>
-            Питомец
-            <input type="text" name="tailLength" formmethod="post" formaction="/pets/orders">
+            Укажите длину хвоста Вашего питомца
+            <input type="number" name="tailLength" min="7" max="120">
         </label>
+        <br>
 
         <label>
-            Питомец
-            <input type="text" name="name" formmethod="post" formaction="/pets/orders">
+            Укажите имя Вашего питомца
+            <input type="text" name="name" minlength="3" maxlength="50">
         </label>
+        <br>
 
         <label>
-            Питомец
-            <input type="text" name="dateOfBirth" formmethod="post" formaction="/pets/orders">
+            Укажите дату рождения Вашего питомца
+            <input type="date" name="dateOfBirth">
         </label>
+        <br>
 
         <label>
-            Питомец
-            <input type="text" name="email" formmethod="post" formaction="/pets/orders">
+            Укажите Вашу электронную почту
+            <input type="email" name="email">
         </label>
+        <br>
 
         <label>
-            Питомец
-            <input type="text" name="phone" formmethod="post" formaction="/pets/orders">
+            Укажите Ваш номер телефона (опционально)
+            <input type="tel" name="phone">
         </label>
+        <br>
 
         <label>
-            Питомец
-            <input type="text" name="rules" formmethod="post" formaction="/pets/orders">
+            Я прочитал правила и согласен с правилами обработки данных
+            <input type="checkbox" name="rules" value="true">
         </label>
+        <br>
+
         <button type="submit" name="submit" value="Отправить" formmethod="post" formaction="/pets/orders">
             Отправить
+        </button>
+        <br>
+
+        <button type="reset">
+            Сбросить значения
         </button>
     </form>
 </main>
